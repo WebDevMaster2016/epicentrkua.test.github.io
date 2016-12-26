@@ -1,0 +1,24 @@
+{
+  "ivory": [
+    {
+      "image": "momentum_wireless_ivory_1.png"
+    },
+    {
+      "image": "momentum_wireless_ivory_2.png"
+    },
+    {
+      "image": "momentum_wireless_ivory_3.png"
+    }
+  ],
+  "black": [
+    {
+      "image": "momentum_wireless_black_1.png"
+    },
+    {
+      "image": "momentum_wireless_black_2.png"
+    },
+    {
+      "image": "momentum_wireless_black_3.png"
+    }
+  ]
+}
