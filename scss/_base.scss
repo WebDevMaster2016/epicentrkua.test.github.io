@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*---============== Main blocks styles - start =============---*/
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: $titilliumweb-regular;
+    font-size: 14px;
+    color: $regular_text_color;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 14px;
+    line-height: 1;
+    display: inline-block;
+    position: relative;
+}
+
+/*---=== input ===---*/
+
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="week"], textarea {
+    font-family: $titilliumweb-regular;
+    font-size: 18px;
+    background: none;
+    color: #403f40;
+    height: 46px;
+    border: 1px solid #bbbbbb;
+}
+
+/*---=== /input ===---*/
+
+/*---============== Main blocks styles - end =============---*/

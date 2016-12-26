@@ -1,0 +1,406 @@
+/*----------------- Content styles - start ------------------*/
+
+.main-content {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../images/prod/bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+/*---=== card ===---*/
+
+.card {
+    margin: 15px;
+    box-shadow: 0 21px 21px rgba(0,0,0,.3);
+    width: 100%;
+    max-width: 800px;
+
+    &__inner {
+        padding: 52px 40px 45px 40px;
+        position: relative;
+        background: #fff;
+        overflow: hidden;
+
+        @include mq($phone-medium) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    &__shape {
+        width: 1220px;
+        height: 300px;
+        background: #f4f2ec;
+        position: absolute;
+        left: -345px;
+        top: 0;
+        transform: rotate(-38deg);
+    }
+
+    &__brand {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #272727;
+        width: 100%;
+        max-width: 184px;
+        height: 52px;
+        padding: 0 23px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__brand-container {
+        display: block;
+        width: 100%;
+    }
+
+    &__brand-image {
+        display: block;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+
+        @include mq($phone) {
+            flex-direction: column;
+        }
+    }
+
+    &__row {
+        width: 100%;
+    }
+
+    &__slider {
+        max-width: 400px;
+        padding-right: 40px;
+        align-self: center;
+        overflow: hidden;
+
+        @include mq($phone) {
+            padding: 20px 0;
+        }
+
+        @include mq($phone-medium) {
+            max-width: 260px;
+        }
+
+        & .owl-dots {
+            height: 3px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        & .owl-dot {
+            display: inline-block;
+            vertical-align: top;
+            cursor: pointer;
+            height: 3px;
+            width: 18px;
+            background: #d7d7d7;
+            transition: background .3s ease;
+
+            &.active {
+                background: #536dfe;
+            }
+
+            & + .owl-dot {
+                margin-left: 5px;
+            }
+        }
+
+    }
+
+    &__custom-nav {
+        text-align: center;
+        color: #37474f;
+        height: 16px;
+        margin-top: 20px;
+
+        & .btn {
+            height: 16px;
+            padding: 2px 0;
+        }
+
+        & .btn .icon {
+            font-size: 12px;
+            height: 12px;
+            vertical-align: top;
+        }
+
+        & .icon-hand {
+            font-size: 16px;
+            height: 16px;
+            margin: 0 15px;
+        }
+
+    }
+
+    &__info {
+        max-width: 320px;
+        padding-bottom: 46px;
+        position: relative;
+
+        @include mq($phone) {
+            max-width: 100%;
+        }
+
+        & .main-headline:after {
+           font-size: 21px;
+        }
+
+    }
+
+    &__top-info {
+        @include clearfix;
+        margin-bottom: 5px;
+    }
+
+    &__model {
+        float: left;
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        @include letter-spacing(100);
+    }
+
+    &__spec-btn {
+        color: #536dfe;
+        float: right;
+        height: 18px;
+        position: relative;
+        transition: color .3s ease;
+
+        &:hover {
+            color: darken(#536dfe, 40%);
+        }
+
+        .icon-settings {
+            font-size: 12px;
+            height: 18px;
+            vertical-align: top;
+            padding: 3px 4px 3px 0;
+        }
+
+    }
+
+    &__spec-btn-text {
+        font-family: $titilliumweb-semibold;
+        font-size: 13px;
+        @include letter-spacing(25);
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: top;
+        height: 18px;
+        line-height: 18px;
+    }
+
+    &__rating {
+        display: inline-block;
+        height: 26px;
+    }
+
+    &__rating-data {
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        vertical-align: top;
+        margin-left: 28px;
+    }
+
+    &__rating-amount {
+        font-size: 15px;
+        color: #f1425d;
+        @include letter-spacing(100);
+    }
+
+    &__rating-reviews {
+        font-size: 13px;
+        color: #656c6f;
+        @include letter-spacing(25);
+    }
+
+    & .description-text {
+        margin: 22px 0 20px 0;
+    }
+
+    &__price-color-wrapper {
+        @include clearfix;
+        margin: 10px 0 45px 0;
+    }
+
+    &__price {
+        float: left;
+
+        & .icon-dollar-sign {
+            font-size: 24px;
+            height: 37px;
+            line-height: 40px;
+            color: #f1425d;
+            vertical-align: top;
+            text-indent: -5px;
+        }
+
+    }
+
+    &__price-value {
+        font-family: $titilliumweb-semibold;
+        font-size: 26px;
+        @include letter-spacing(35);
+        color: #f1425d;
+        display: inline-block;
+        vertical-align: top;
+        text-indent: -6px;
+    }
+
+    &__price-info {
+        font-size: 12px;
+        @include letter-spacing(50);
+        color: rgba(#37474f, .5);
+        margin-top: 2px;
+    }
+
+    &__colors-list {
+        float: right;
+    }
+
+    &__colors-text {
+        font-size: 12px;
+        color: #37474f;
+        margin-top: 4px;
+    }
+
+    &__colors {
+        @include clearfix;
+        float: right;
+        margin-top: 15px;
+    }
+
+    &__color-item {
+        float: left;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: border .3s ease,
+                    box-shadow .3s ease;
+
+        & + .card__color-item {
+            margin-left: 22px;
+        }
+
+        &--black {
+            background-image: url("../images/prod/product_color_black.png");
+        }
+
+        &--white {
+            background-image: url("../images/prod/product_color_ivory.png");
+        }
+
+        &--active {
+            border: solid 2px #fff;
+            box-shadow: 0 0 5px 3px rgba(83,109,254,.5);
+        }
+
+    }
+
+    &__info-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 46px;
+        width: 100%;
+        @include clearfix;
+
+        & .btn--add {
+            float: right;
+        }
+    }
+
+    &__quantity {
+        @include clearfix;
+        float: left;
+    }
+
+    &__quantity-text {
+        float: left;
+        font-size: 13px;
+        line-height: 46px;
+        padding-right: 10px;
+        @include letter-spacing(50);
+    }
+
+    &__quantity-spinner {
+        float: left;
+        position: relative;
+        padding-right: 22px;
+    }
+
+    & .card__quantity-input {
+        max-width: 52px;
+        text-align: center;
+
+        @include mq($phone-small) {
+            max-width: 42px;
+        }
+    }
+
+    &__quantity-ico {
+        position: absolute;
+        right: 0;
+
+        & .icon {
+            font-size: 11px;
+            color: #37474f;
+        }
+
+    }
+
+    &__quantity-ico--up {
+        top: 0;
+        margin-top: 2px;
+    }
+
+    &__quantity-ico--down {
+        bottom: 0;
+        margin-bottom: 2px;
+    }
+
+}
+
+.description-headline--card-info {
+    margin-top: 13px;
+}
+
+.ua-ie-11 .card__spec-btn-text {
+    line-height: 17px;
+}
+
+/*---=== owl-carousel ===---*/
+
+.owl-carousel {
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.owl-carousel__item {
+    max-width: 360px;
+    overflow: hidden;
+    & img {
+        max-width: 360px;
+        height: auto;
+    }
+}
+
+/*---=== /owl-carousel ===---*/
+
+
+/*---=== /card ===---*/
+
+/*----------------- Content styles - end ------------------*/

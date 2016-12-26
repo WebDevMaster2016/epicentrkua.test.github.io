@@ -1,0 +1,166 @@
+/*---============== helpers - start =============---*/
+
+/*----------------- position ------------------*/
+
+.position-relative { position: relative; }
+
+.position-absolute { position: absolute; }
+
+.position-fixed {
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+}
+
+.position-static { position: static; }
+
+/*----------------- /position ------------------*/
+
+/*----------------- display ------------------*/
+
+.display-block { display: block; }
+
+.display-inlineblock { display: inline-block; }
+
+.display-table {
+    display: table;
+    border-collapse: collapse;
+}
+
+.display-tablerow { display: table-row; }
+
+.display-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tablelayout-fixed { table-layout: fixed; }
+
+.inlineblock-clear {
+    display: table;
+    font-size: 0;
+}
+
+.display-none { display: none; }
+
+/*----------------- /display ------------------*/
+
+/*----------------- vertical alignment ------------------*/
+
+.verticalalign-middle { vertical-align: middle; }
+
+.verticalalign-top { vertical-align: top; }
+
+.verticalalign-bottom { vertical-align: bottom; }
+
+.verticalalign-baseline { vertical-align: baseline; }
+
+/*----------------- /vertical alignment ------------------*/
+
+/*----------------- text align ------------------*/
+
+.textalign-left { text-align: left; }
+
+.textalign-right { text-align: right; }
+
+.textalign-center { text-align: center; }
+
+.textalign-justify { text-align: justify; }
+
+/*----------------- /text align ------------------*/
+
+/*----------------- float ------------------*/
+
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+.float-none { float: none; }
+
+/*----------------- /float ------------------*/
+
+/*----------------- padding ------------------*/
+
+.no-paddingbottom { padding-bottom: 0 !important; }
+
+.no-paddingtop { padding-top: 0 !important; }
+
+.no-paddingleft { padding-left: 0 !important; }
+
+.no-paddingright { padding-right: 0 !important; }
+
+.no-padding { padding: 0 !important; }
+
+/*----------------- /padding ------------------*/
+
+/*----------------- margin ------------------*/
+
+.margin-0-auto { margin: 0 auto; }
+
+.no-margintop { margin-top: 0 !important; }
+
+.no-marginbottom { margin-bottom: 0 !important; }
+
+.no-marginleft { margin-left: 0 !important; }
+
+.no-marginright { margin-right: 0 !important; }
+
+.no-margin { margin: 0 !important; }
+
+/*----------------- /margin ------------------*/
+
+/*----------------- indents ------------------*/
+
+.top-0px { top: 0 !important; }
+
+.bottom-0px { bottom: 0 !important; }
+
+.left-0px { left: 0 !important; }
+
+.right-0px { right: 0 !important; }
+
+/*----------------- /indents ------------------*/
+
+/*----------------- width ------------------*/
+
+.width-25per { width: 25% !important; }
+
+.width-33point3per { width: 33.3% !important; }
+
+.width-50per { width: 50% !important; }
+
+.width-100per { width: 100% !important; }
+
+/*----------------- /width ------------------*/
+
+.visibility-hidden { visibility: hidden; }
+
+.overflow-hidden { overflow: hidden; }
+
+.nowrap { white-space: nowrap; }
+
+.clear { clear: both; }
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.text-crop {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hide-content {
+    position: absolute;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    clip: rect(0 0 0 0);
+}
+
+/*---============== helpers - end =============---*/

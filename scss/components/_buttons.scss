@@ -1,0 +1,29 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: 0 none;
+    padding: 0;
+    background: none;
+
+    &--big-blue {
+        font-family: $titilliumweb-regular;
+        font-size: 17px;
+        color: #ffffff;
+        @include letter-spacing(25);
+        height: 46px;
+        line-height: 46px;
+        min-width: 148px;
+        background: #536dfe;
+        transition: background .225s ease;
+
+        @include mq($phone-small) {
+            min-width: 118px;
+        }
+
+        &:hover {
+            background: darken(#536dfe, 30%);
+        }
+    }
+
+}

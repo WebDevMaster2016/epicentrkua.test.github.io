@@ -1,0 +1,22 @@
+/*---=== import variables & mixins ===---*/
+@import "partials/_varibles";
+@import "partials/_mixins";
+
+/*---=== import base style ===---*/
+@import "_reset";
+@import "_fonts";
+@import "_icons";
+@import "_base";
+@import "_typography";
+
+/*---=== import components ===---*/
+@import "components/_buttons";
+@import "components/_rating";
+@import "_owl.carousel.min";
+
+/*---=== import main style ===---*/
+@import "_main";
+
+/*---=== import placeholders & helpers ===---*/
+@import "partials/_placeholders";
+@import "partials/_helpers";

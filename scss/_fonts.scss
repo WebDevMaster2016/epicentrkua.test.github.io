@@ -1,0 +1,13 @@
+@import "partials/mixins";
+
+@include font-face('titilliumweb-black', titilliumweb-black-webfont, titilliumweb-black-webfont);
+
+@include font-face('titilliumweb-bold', titilliumweb-bold-webfont, titilliumweb-bold-webfont);
+
+@include font-face('titilliumweb-italic', titilliumweb-italic-webfont, titilliumweb-italic-webfont);
+
+@include font-face('titilliumweb-light', titilliumweb-light-webfont, titilliumweb-light-webfont);
+
+@include font-face('titilliumweb-regular', titilliumweb-regular-webfont, titilliumweb-regular-webfont);
+
+@include font-face('titilliumweb-semibold', titilliumweb-semibold-webfont, titilliumweb-semibold-webfont);

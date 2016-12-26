@@ -1,0 +1,79 @@
+/*---=== typography ===---*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $titilliumweb-regular;
+    font-weight: normal;
+}
+
+.main-headline {
+    font-size: 29px;
+    line-height: 35px;
+    @include letter-spacing(25);
+    text-transform: uppercase;
+}
+
+.sub-headline {
+    font-size: 24px;
+    line-height: 35px;
+    @include letter-spacing(25);
+}
+
+.description-headline {
+    font-size: 17px;
+    line-height: 24px;
+    @include letter-spacing(10);
+    color: #646b6f;
+}
+
+.description-text {
+    line-height: 23px;
+    @include letter-spacing(25);
+}
+
+.regular-link {
+    color: #536dfe;
+    position: relative;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        top: calc(100% - 2px);
+        left: 0;
+        width: 100%;
+        background: #536dfe;
+        opacity: 0;
+        height: 1px;
+        will-change: opacity;
+        transition: opacity .2s ease;
+    }
+
+    &:hover:before {
+        opacity: 1;
+    }
+
+}
+
+.registered-trademark {
+    position: relative;
+
+    &:after {
+        content: '®';
+        line-height: 1;
+        position: absolute;
+        user-select: none;
+    }
+
+}
+
+b,
+strong,
+.text-bold {
+    font-family: $titilliumweb-bold;
+    font-weight: normal;
+}
+
+.text-semi-bold {
+    font-family: $titilliumweb-semibold;
+}
+
+/*---=== /typography ===---*/

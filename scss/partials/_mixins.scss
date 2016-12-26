@@ -1,0 +1,60 @@
+@mixin font-face($font_name, $font_dir, $file_name) {
+    @font-face {
+        font-family: $font_name;
+        src: url('../fonts/#{$font_dir}/#{$file_name}.eot'); /* IE9 Compat Modes */
+        src: url('../fonts/#{$font_dir}/#{$file_name}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('../fonts/#{$font_dir}/#{$file_name}.woff2') format('woff2'), /* Super Modern Browsers */
+             url('../fonts/#{$font_dir}/#{$file_name}.woff') format('woff'), /* Pretty Modern Browsers */
+             url('../fonts/#{$font_dir}/#{$file_name}.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('../fonts/#{$font_dir}/#{$file_name}.svg##{$file_name}') format('svg'); /* Legacy iOS */
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+@mixin letter-spacing($letterspacing) {
+    letter-spacing: ($letterspacing/1000) + em;
+}
+
+@mixin mq($width, $type: max) {
+    @media screen and (#{$type}-width: $width) {
+        @content;
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin vertical-center($position: absolute) {
+    position: $position;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+@mixin horizontal-center($position: absolute) {
+    position: $position;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@mixin vertical-horizontal-center($position: absolute) {
+    position: $position;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

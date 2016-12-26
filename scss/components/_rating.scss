@@ -1,0 +1,51 @@
+.star-cb-group {
+    font-size: 0;
+    * {
+        font-size: 17px;
+    }
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    & > input {
+        display: none;
+        & + label {
+            display: inline-block;
+            overflow: hidden;
+            text-indent: 9999px;
+            width: 0.942em;
+            white-space: nowrap;
+            cursor: pointer;
+            &:before {
+                display: inline-block;
+                text-indent: -9999px;
+                content: $star;
+                color: $unchecked-color;
+            }
+        }
+        &:checked ~ label:before,
+        & + label:hover ~ label:before,
+        & + label:hover:before {
+            content: $star;
+            color: $checked-color;
+        }
+    }
+
+    /* the hidden clearer */
+    & > .star-cb-clear + label {
+        text-indent: -9999px;
+        width: .5em;
+        margin-left: -.5em;
+    }
+    & > .star-cb-clear + label:before {
+        width: .5em;
+    }
+
+    &:hover > input + label:before {
+        content: $star;
+        color: $unchecked-color;
+    }
+    &:hover > input + label:hover ~ label:before,
+    &:hover > input + label:hover:before {
+        content: $star;
+        color: $checked-color;
+    }
+}
